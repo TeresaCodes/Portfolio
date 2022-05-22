@@ -97,3 +97,27 @@ main {
   cursor: pointer;
   opacity: 0.5;
 }
+
+@media (max-width: 1200px) {
+  .hero-img {
+    background-position: right bottom;
+  }
+}
+
+@media (max-width: 991px) {
+  .content {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 0;
+  }
+
+  main,
+  .hero-img,
+  .content {
+    height: 100vh;
+  }
+}
