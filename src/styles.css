@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
+
+p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #0f0023;
+}
+
+.main {
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url(/photos/frontpage_1.png);
+  background-repeat: no-repeat;
+  background-position: bottom left 15vw;
+  background-size: cover;
+}
+
+.frontpage-banner {
+  margin-top: 15vh;
+}
