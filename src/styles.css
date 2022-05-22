@@ -93,7 +93,11 @@ main {
   padding: 4rem 4.5rem;
 }
 
-.github:hover {
+.github {
+  padding-top: 0.5rem;
+}
+
+.github i:hover {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -105,8 +109,17 @@ main {
 }
 
 @media (max-width: 991px) {
+  li {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
   .content {
     padding: 3rem 1rem;
+  }
+
+  .github {
+    padding-top: 1rem;
   }
 }
 
@@ -119,5 +132,19 @@ main {
   .hero-img,
   .content {
     height: 100vh;
+  }
+
+  .brand {
+    position: relative;
+    top: -570px;
+  }
+
+  li {
+    display: inline-block;
+    position: relative;
+    top: -40px;
+    left: 70px;
+
+    margin-right: 1rem;
   }
 }
