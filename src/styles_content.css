@@ -21,6 +21,7 @@ h6 {
 p {
   font-family: var(--default-font);
   color: var(--text-color);
+  line-height: 2rem;
 }
 
 ul {
@@ -28,12 +29,14 @@ ul {
 }
 
 li {
+  display: inline-block;
   list-style: none;
   letter-spacing: 0.1rem;
-  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
-a {
+li a,
+.normal-link {
   padding: 0 !important;
   color: var(--text-color);
   text-shadow: 1px 1px 1px rgb(255, 255, 255);
@@ -47,20 +50,6 @@ a:hover {
 
 .container-fluid {
   padding: 0 !important;
-}
-
-.brand p {
-  margin-bottom: 0;
-  font-family: var(--heading-font);
-  letter-spacing: 0.3rem;
-  color: black;
-}
-
-.brand h1 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  font-family: var(--default-font);
-  color: var(--text-color);
 }
 
 .container {
@@ -90,7 +79,7 @@ main {
   background-image: url(/photos/hero_img_v2.webp);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: right bottom;
 }
 
 .content {
@@ -98,7 +87,7 @@ main {
 }
 
 .github {
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
 }
 
 .github i:hover {
@@ -107,22 +96,27 @@ main {
   color: var(--text-color);
 }
 
+.main-content {
+  width: 60%;
+}
+
+.main-content img {
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .main-content {
+    width: 50%;
+  }
+}
+
 @media (max-width: 1200px) {
-  .hero-img {
-    background-position: right bottom;
+  .main-content {
+    width: 40%;
   }
 }
 
 @media (max-width: 991px) {
-  .hero-img {
-    background-position: 150% bottom;
-  }
-
-  .github {
-    position: relative;
-    right: -60px;
-  }
-
   li {
     margin-top: 0.5rem;
     margin-bottom: 0;
@@ -131,26 +125,31 @@ main {
   .github {
     padding-top: 1rem;
   }
+
+  .hero-img {
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .main-content .row {
+    margin-top: 1rem !important;
+  }
+
+  .main-content .row h2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
 
 @media (max-width: 810px) {
-  .hero-img {
-    background-position: 150px bottom;
-  }
-
   .container {
-    padding: 0;
-  }
-
-  main,
-  .hero-img,
-  .content {
-    height: 100vh;
-  }
-
-  .brand {
-    position: relative;
-    top: -60vh;
+    padding: 0 !important;
   }
 
   li {
@@ -158,10 +157,8 @@ main {
 
     margin-right: 1rem;
   }
-}
 
-@media (max-width: 767px) {
-  .hero-img {
-    background-position: 150px bottom;
+  .main-content {
+    margin-top: 2rem !important;
   }
 }
