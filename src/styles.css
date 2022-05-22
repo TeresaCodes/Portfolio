@@ -1,30 +1,99 @@
+/*
+Portfolio design idea by Ben Schade
+https://dribbble.com/shots/3299965-Designer-Profiles-Part-3
+*/
+
+:root {
+  --heading-font: "Lora", serif;
+  --default-font: "Plus Jakarta Sans", sans-serif;
+  --text-color: rgba(51, 51, 51, 0.9);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", serif;
+  font-family: var(--heading-font);
 }
 
 p {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  color: white;
+  font-family: var(--default-font);
+  color: var(--text-color);
 }
 
-body {
-  background-color: #0f0023;
+ul {
+  padding: 0;
 }
 
-.main {
-  margin: 0 auto;
-  height: 100vh;
-  background-image: url(/photos/frontpage_1.png);
+li {
+  list-style: none;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--text-color);
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.brand p {
+  margin-bottom: 0;
+  font-family: var(--heading-font);
+  letter-spacing: 0.3rem;
+  color: black;
+}
+
+.brand h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: var(--default-font);
+  color: var(--text-color);
+}
+
+.container {
+  padding: 12vh 0;
+}
+
+main,
+.hero-img,
+.content {
+  height: 75vh;
+}
+
+main {
+  border: rgba(51, 51, 51, 0.1) 1px solid;
+  border-radius: 12px;
+
+  background: rgb(236, 236, 236);
+  box-shadow: 10px 10px 100px 10px rgba(0, 0, 0, 0.75);
+}
+
+.hero-img {
+  /*
+  Photo by Rizky Sabriansyah
+  https://unsplash.com/photos/AXjWtpjEq_Q
+   */
+
+  background-image: url(/photos/hero_img_v2.webp);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom left 15vw;
-  background-size: cover;
+  background-position: center bottom;
 }
 
-.frontpage-banner {
-  margin-top: 15vh;
+.content {
+  padding: 4rem 4.5rem;
+}
+
+.github:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
