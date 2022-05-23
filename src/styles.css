@@ -7,6 +7,7 @@ https://dribbble.com/shots/3299965-Designer-Profiles-Part-3
   --heading-font: "Lora", serif;
   --default-font: "Plus Jakarta Sans", sans-serif;
   --text-color: rgba(51, 51, 51, 0.9);
+  --bg-color: rgb(245, 245, 245);
 }
 
 h1,
@@ -50,7 +51,9 @@ li a,
 }
 
 .github {
-  padding-top: 0.5rem;
+  background-color: var(--bg-color);
+  padding: 0.4rem 0.2rem;
+  border-radius: 50%;
 }
 
 .github i:hover {
@@ -123,7 +126,7 @@ main {
   border: rgba(51, 51, 51, 0.1) 1px solid;
   border-radius: 12px;
 
-  background: rgb(245, 245, 245);
+  background: var(--bg-color);
   box-shadow: 10px 10px 100px 10px rgba(0, 0, 0, 0.75);
 }
 
@@ -206,10 +209,6 @@ main {
   li {
     margin-top: 0.5rem;
     margin-bottom: 0;
-  }
-
-  .github {
-    padding-top: 1rem;
   }
 
   .container {
