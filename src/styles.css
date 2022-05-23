@@ -95,6 +95,18 @@ a:hover {
   background-position: right bottom;
 }
 
+.bg-img-work {
+  /*
+  Photo by Rizky Sabriansyah
+  https://unsplash.com/photos/AXjWtpjEq_Q
+   */
+
+  background-image: url(/photos/hero_img_v2.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
 main,
 .hero-img,
 .content {
@@ -133,6 +145,20 @@ main {
 .main-content {
   width: 60%;
 }
+.main-content-work {
+  width: 65%;
+}
+
+.main-content-work .project {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 1399px) {
+  .main-content,
+  .main-content-work {
+    width: 55%;
+  }
+}
 
 @media (max-width: 1199px) {
   .container {
@@ -143,11 +169,23 @@ main {
     background-position: right bottom;
   }
 
-  .main-content {
+  .bg-img-work {
+    background-position: 190% bottom;
+  }
+
+  .main-content,
+  .main-content-work {
     width: 40%;
   }
 
-  .main-content .row h2 {
+  .main-content-work h1,
+  .main-content-work h2,
+  .main-content-work p {
+    text-align: center;
+  }
+
+  .main-content .row h2,
+  .main-content-work h2 {
     margin-top: 2rem;
   }
 }
@@ -155,6 +193,14 @@ main {
 @media (max-width: 991px) {
   .hero-img {
     background-position: 150% bottom;
+  }
+
+  .bg-img {
+    background-position: 280px bottom;
+  }
+
+  .bg-img-work {
+    background-position: 280px bottom;
   }
 
   li {
@@ -166,7 +212,28 @@ main {
     padding-top: 1rem;
   }
 
-  .main-content .row {
+  .container {
+    padding: 3vh 0 0 !important;
+  }
+
+  .content {
+    padding: 2rem 2rem;
+  }
+
+  .main-content,
+  .main-content-work {
+    margin-top: 2rem !important;
+    width: 40%;
+  }
+
+  .main-content h1,
+  .main-content h2,
+  .main-content p {
+    text-align: center;
+  }
+
+  .main-content .row,
+  .main-content-work .row {
     margin-top: 1rem !important;
   }
 }
@@ -176,35 +243,24 @@ main {
     background-position: 100% bottom;
   }
 
-  .bg-img {
-    background-position: 350px;
-  }
-
-  .container {
-    padding: 3vh 0 0 !important;
-  }
-
-  .content {
-    padding: 2rem 2rem;
-  }
-
   .hero-content {
     margin-top: 4rem !important;
   }
+}
 
-  li {
-    margin-right: 0.5rem;
+@media (max-width: 767px) {
+  .hero-img {
+    background-position: 170px bottom;
   }
 
-  .main-content h1,
-  .main-content h2,
-  .main-content p {
-    text-align: center;
+  .bg-img,
+  .bg-img-work {
+    background-image: url();
   }
 
-  .main-content {
-    margin-top: 2rem !important;
-    width: 50%;
+  .main-content,
+  .main-content-work {
+    width: 100%;
   }
 }
 
@@ -221,7 +277,8 @@ main {
     background-image: url();
   }
 
-  .main-content {
+  .main-content,
+  .main-content-work {
     width: 100%;
   }
 
