@@ -70,7 +70,9 @@ a:hover {
 main,
 .hero-img,
 .content {
-  min-height: 75vh;
+  min-height: 650px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 main {
@@ -118,11 +120,6 @@ main {
     background-position: 150% bottom;
   }
 
-  .github {
-    position: relative;
-    right: -60px;
-  }
-
   li {
     margin-top: 0.5rem;
     margin-bottom: 0;
@@ -156,12 +153,12 @@ main {
   li {
     display: inline-block;
 
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
 }
 
 @media (max-width: 767px) {
   .hero-img {
-    background-position: 150px bottom;
+    background-position: right bottom;
   }
 }
